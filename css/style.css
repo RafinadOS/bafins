@@ -146,8 +146,8 @@ body {
 }
 .topmenu__item:hover .topmenu-inner {
   display: block;
-  -webkit-animation: showMenu 0.3s ease-in 1;
-  animation: showMenu 0.3s ease-in 1;
+  -webkit-animation: showMenu 0.2s ease-in;
+  animation: showMenu 0.2s ease-in;
 }
 @-webkit-keyframes showMenu {
   from {
