@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('../fonts/BloggerSans.eot?#iefix') format('embedded-opentype'), url('../fonts/BloggerSans.otf') format('opentype'), url('../fonts/BloggerSans.woff') format('woff'), url('../fonts/BloggerSans.ttf') format('truetype'), url('../fonts/BloggerSans.svg#BloggerSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('../fonts/BloggerSans-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/BloggerSans-Medium.otf') format('opentype'), url('../fonts/BloggerSans-Medium.woff') format('woff'), url('../fonts/BloggerSans-Medium.ttf') format('truetype'), url('../fonts/BloggerSans-Medium.svg#BloggerSans-Medium') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BloggerSans';
+  src: url('../fonts/BloggerSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/BloggerSans-Bold.otf') format('opentype'), url('../fonts/BloggerSans-Bold.woff') format('woff'), url('../fonts/BloggerSans-Bold.ttf') format('truetype'), url('../fonts/BloggerSans-Bold.svg#BloggerSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

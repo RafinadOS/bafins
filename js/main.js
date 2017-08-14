@@ -1,6 +1,4 @@
-$(document).ready(function() {
-
-
-
-d
-});
+window.onload = function()
+{
+	
+}
