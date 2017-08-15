@@ -16,7 +16,7 @@ body {
 .wrapper {
   display: block;
   overflow: hidden;
-  width: 980px;
+  width: 900px;
   margin: auto;
 }
 .header {
@@ -66,6 +66,7 @@ body {
   padding: 0;
   font-size: 0;
   white-space: nowrap;
+  text-align: center;
 }
 .topmenu__item {
   display: inline-block;
@@ -190,8 +191,9 @@ body {
   padding: 55px 0;
 }
 .container__item-bg {
-  background: #e4eaf4;
-  padding: 40px 0 70px 0;
+  background: #e4eaf4 url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%221440px%22%20height%3D%22129px%22%20viewBox%3D%220%200%201440%20129%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20transform%3D%22translate%280.000000%2C%20-582.000000%29%22%20fill%3D%22%23ffffff%22%3E%0A%3Cpolygon%20points%3D%220%20582%20720%20695%201440%20582%201440%20711%200%20711%22%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E') center bottom no-repeat;
+  padding: 40px 0 120px 0;
+  background-size: 1920px 130px;
 }
 .activities {
   clear: both;
@@ -230,4 +232,38 @@ body {
 }
 .services p {
   line-height: 19px;
+}
+.services__wrapper {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  padding: 40px 0 10px 0;
+  margin: 0 -35px;
+}
+.services__item {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  width: 145px;
+  margin: 0 20px;
+}
+.services__item-wrapper {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 145px;
+  position: relative;
+  background: #fff;
+  margin: 0 0 15px 0;
+}
+.services__item-wrapper object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.services__item-text {
+  font-size: 15px;
 }
