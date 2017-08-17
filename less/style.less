@@ -204,13 +204,17 @@ html,body {
 	max-width: 100%;
 	&__item {
 		.clear();
-		padding: 55px 0;
+		padding: 20px 0;
 		&-bg {
 			background: #e4eaf4 url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%221440px%22%20height%3D%22129px%22%20viewBox%3D%220%200%201440%20129%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20transform%3D%22translate%280.000000%2C%20-582.000000%29%22%20fill%3D%22%23ffffff%22%3E%0A%3Cpolygon%20points%3D%220%20582%20720%20695%201440%20582%201440%20711%200%20711%22%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E') center bottom no-repeat;
-			padding: 40px 0 120px 0;
-			background-size: 1920px 130px;
+			padding: 40px 0 160px 0;
+			background-size: cover;
 		}
 	}
+}
+
+.container__item-bg .services__item {
+	background: transparent !important;
 }
 
 .activities {
@@ -218,6 +222,7 @@ html,body {
 	font-size: 16px;
 	color: #3a4354;
 	line-height: 19px;
+	padding: 50px 0 70px 0;
 	&__title {
 		.clear();
 		font-size: 39px;
@@ -245,25 +250,47 @@ html,body {
 	& p {
 		line-height: 19px;
 	}
+	&-bill {
+		padding-top: 35px;
+		& p {
+			margin-bottom: 40px;
+		}
+	}
 	&__wrapper {
 		.clear();
 		padding: 40px 0 10px 0;
 		margin: 0 -35px;
-
+		&-without {
+			padding: 0;
+		}
 	}
 	&__item {
 		display: inline-block;
 		vertical-align: top;
 		overflow: hidden;
 		width: 145px;
-		margin: 0 20px;
+		margin: 0 2px;
+		padding: 18px;
+		box-sizing: content-box;
+		background: transparent;
+		.radius(4px);
+		.transition();
+		&:hover {
+			background: #dee5ec;
+		}
 		&-wrapper {
 			.clear();
 			height: 145px;
 			position: relative;
 			background: #fff;
 			margin: 0 0 15px 0;
-			& object {
+			border: 1px solid #c5cfdf;
+			.radius(3px);
+			& img {
+				display: block;
+				max-width: 110px;
+			}
+			& object, img {
 				position: absolute;
 				top: 50%;
 				left: 50%;
@@ -275,5 +302,35 @@ html,body {
 		&-text {
 			font-size: 15px;
 		}
+	}
+}
+
+.services__wrapper-without .services__item-wrapper {
+	margin: 0;
+}
+
+.button-wrapper {
+	.clear();
+	text-align: center;
+}
+
+.button {
+	display: inline-block;
+	margin: 40px 0;
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 46px;
+	height: 43px;
+	text-transform: uppercase;
+	color: #fff;
+	background: #5173a5;
+	padding: 0 30px;
+	border-bottom: 4px solid #395c90;
+	cursor: pointer;
+	&:hover {
+		background: darken(#5173a5, 5%)
+	}
+	&:active {
+		line-height: 48px;
 	}
 }
