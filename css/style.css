@@ -183,17 +183,38 @@ body {
   display: block;
   overflow: hidden;
   max-width: 100%;
+  position: relative;
 }
 .container__item {
   clear: both;
   display: block;
   overflow: hidden;
   padding: 20px 0;
+  position: relative;
+  z-index: 9;
 }
 .container__item-bg {
   background: #e4eaf4 url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%221440px%22%20height%3D%22129px%22%20viewBox%3D%220%200%201440%20129%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20transform%3D%22translate%280.000000%2C%20-582.000000%29%22%20fill%3D%22%23ffffff%22%3E%0A%3Cpolygon%20points%3D%220%20582%20720%20695%201440%20582%201440%20711%200%20711%22%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E') center bottom no-repeat;
   padding: 40px 0 160px 0;
   background-size: cover;
+}
+.container__bg {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 600px;
+  background: url('../images/start-page.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container__bg:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 200px;
+  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%221920px%22%20height%3D%22230px%22%20viewBox%3D%220%200%201440%20129%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20transform%3D%22translate%280.000000%2C%20-582.000000%29%22%20fill%3D%22%23ffffff%22%3E%0A%3Cpolygon%20points%3D%220%20582%20720%20695%201440%20582%201440%20711%200%20711%22%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E") center top no-repeat;
 }
 .container__item-bg .services__item {
   background: transparent !important;
@@ -252,6 +273,21 @@ body {
 }
 .services__wrapper-without {
   padding: 0;
+}
+.services__half {
+  float: left;
+  overflow: hidden;
+  width: 50%;
+  padding: 0 0 100px 0;
+}
+.services__half p {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  margin: 0 0 22px 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
 }
 .services__item {
   display: inline-block;
@@ -324,9 +360,57 @@ body {
   border-bottom: 4px solid #395c90;
   cursor: pointer;
 }
+.button-big {
+  height: 63px;
+  line-height: 65px;
+  font-size: 18px;
+  padding: 0 40px;
+  margin: 0;
+}
 .button:hover {
   background: #496794;
 }
 .button:active {
   line-height: 48px;
+}
+.footer {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  border-top: 14px solid #314b70;
+  background: #395c90;
+  padding: 50px 0 0 0;
+  color: #fff;
+  text-align: center;
+}
+.footer__phone {
+  font-size: 40px;
+  margin: 0 0 20px 0;
+}
+.footer__adress {
+  font-size: 18px;
+  margin: 0 0 40px 0;
+}
+.footer__copy {
+  font-size: 13px;
+  color: #738fb8;
+  margin: 0 0 30px 0;
+}
+.footer__create {
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+.footer__create {
+  padding: 15px 0;
+  text-align: center;
+  background: #5173a5;
+}
+.footer__create-link {
+  display: inline-block;
+  width: 80px;
+  height: 16px;
+  border: 5px solid #fff;
+  background: #fff url('../images/copy.png') center center no-repeat;
+  box-sizing: content-box;
 }
