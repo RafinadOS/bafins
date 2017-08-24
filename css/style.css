@@ -30,6 +30,9 @@ footer {
   -moz-transition: 0.2s;
   transition: 0.2s;
 }
+header {
+  border-top: 10px solid #395c90;
+}
 .show-menu header,
 .show-menu section,
 .show-menu footer {
@@ -52,8 +55,7 @@ footer {
 .header {
   display: block;
   max-width: 100%;
-  border-top: 12px solid #395c90;
-  padding: 30px 0 0 0;
+  padding: 24px 0 0 0;
 }
 .header__logo {
   float: left;
@@ -389,8 +391,16 @@ footer {
   color: #fff;
   background: #5173a5;
   padding: 0 30px;
+  border: none;
   border-bottom: 4px solid #395c90;
   cursor: pointer;
+  font-family: 'BloggerSans';
+}
+.button:hover {
+  background: #496794;
+}
+.button:active {
+  line-height: 48px;
 }
 .button-big {
   height: 63px;
@@ -400,13 +410,7 @@ footer {
   margin: 0;
 }
 .button-big:active {
-  line-height: 65px;
-}
-.button:hover {
-  background: #496794;
-}
-.button:active {
-  line-height: 48px;
+  line-height: 68px;
 }
 .footer {
   clear: both;
@@ -453,6 +457,72 @@ footer {
 .menu-show {
   display: none;
 }
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  width: 580px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.popup-show {
+  display: block;
+}
+.popup__wrapper {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background: #f2f2f2;
+  padding: 45px 35px;
+  -webkit-box-shadow: 0 6px 15px 0 rgba(39, 50, 59, 0.5);
+  box-shadow: 0 6px 15px 0 rgba(39, 50, 59, 0.5);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.popup__close {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 15px;
+  right: 15px;
+  background: #000;
+  cursor: pointer;
+}
+.popup__title {
+  text-align: center;
+  margin: 0 0 25px 0;
+  font-weight: bold;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 18px;
+}
+.popup__title-sm {
+  font-size: 13px;
+  margin: 0 0 5px 0 !important;
+}
+.popup__input {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 0 35px 0;
+  height: 46px;
+  background: #fff;
+  border: 1px solid #b8c3ce;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.popup .button {
+  width: 297px;
+}
 @media (max-width: 1100px) {
   .topmenu {
     width: 900px;
@@ -461,8 +531,14 @@ footer {
   .topmenu__item a {
     padding: 0 49px;
   }
+  .topmenu-inner__item a {
+    padding: 0 28px;
+  }
 }
 @media (max-width: 940px) {
+  header {
+    border: none;
+  }
   section {
     padding: 70px 0 0 0;
   }

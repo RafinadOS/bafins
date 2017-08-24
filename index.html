@@ -178,11 +178,11 @@
 					<div class="services__wrapper">
 						<div class="services__half">
 							<p>Остались вопроосы?</p>
-							<a href="#" class="button button-big">Получить консультацию</a>
+							<span data-role="show-popup" for="consult" class="button button-big">Получить консультацию</span>
 						</div>
 						<div class="services__half">
 							<p>Остались вопроосы?</p>
-							<a href="#" class="button button-big">Получить предложение</a>
+							<span data-role="show-popup" for="faq" class="button button-big">Получить предложение</span>
 						</div>
 					</div>
 				</div>
@@ -201,6 +201,17 @@
 			</div>
 		</div>
 	</footer>
+</div>
+<div class="popup popup-show" id="consult">
+	<div class="popup__wrapper">
+		<p class="popup__title">Получить консультацию</p>
+		<p class="pupup__title popup__title-sm">Телефон</p>
+		<input type="text" class="popup__input">
+		<div class="button-wrapper">
+			<input type="submit" class="button button-big" value="Заказать звонок">
+		</div>
+		<div class="popup__close"></div>
+	</div>
 </div>
 <script src="./js/main.js"></script>
 </body>
