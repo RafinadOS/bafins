@@ -685,7 +685,14 @@ input[type='number'] {
 	.container {
 		&__bg {
 			height: 380px;
+			&-inner {
+				margin-bottom: -300px;
+			}
 		}
+	}
+	.info {
+		padding: 25px 24px;
+		margin: 0 18px 60px 18px;
 	}
 	.menu-show {
 		opacity: .9;
@@ -790,6 +797,15 @@ input[type='number'] {
 			}
 		}
 	}
+	.content {
+		margin: 115px 18px 50px 18px;
+	}
+	.breadcrumbs {
+		height: 20px;
+		& * {
+			display: none;
+		}
+	}
 	.show-menu .header__menu {
 		// -webkit-transform: translateX(0);
 		// -moz-transform: translateX(0);
@@ -798,6 +814,42 @@ input[type='number'] {
 }
 
 @media (max-width: 760px) {
+	.info {
+		padding: 0 20px 20px 20px !important;
+		&__title {
+			font-size: 24px !important;
+		}
+		& p {
+			font-size: 14px;
+			line-height: 19px;
+			margin: 0 0 20px 0;
+		}
+		& .button {
+			width: auto;
+			display: block;
+			font-size: 16px;
+			white-space: nowrap;
+			padding: 0;
+		}
+	}
+	.container {
+		&__bg {
+			&-inner {
+				margin-bottom: -265px;
+			}
+		}
+	}
+	.content {
+		padding: 0 18px;
+		& h1, &__title {
+			font-weight: normal;
+			font-size: 20px !important;
+			line-height: 24px !important;
+		}
+		& p {
+			font-size: 14px;
+		}
+	}
 	.popup {
 		width: auto;
 		&__wrapper {
@@ -909,6 +961,17 @@ input[type='number'] {
 		&__item {
 			padding: 18px 10px !important;
 		}
+	}
+	.container {
+		&__bg {
+			margin-top: 70px;
+			&-inner {
+				margin-bottom: -55px;
+			}
+		}
+	}
+	.content {
+		margin-top: 0;
 	}
 }
 
